@@ -19,9 +19,14 @@ our $scenario = {
         {
             fcall_template => 'Module::Load::Conditional::check_install(module => <module>)',
         },
+        {
+            name => 'require',
+            code_template => 'eval { (my $pm = <module> . ".pm") =~ s!::!/!g; require $pm; 1 } ? 1:0',
+        },
     ],
     datasets => [
         {args=>{module=>'strict'}},
+        #{args=>{module=>'App::Cpan'}}, # an example of a relatively heavy core module to load
         {args=>{module=>'Foo::Bar'}},
     ],
 };
