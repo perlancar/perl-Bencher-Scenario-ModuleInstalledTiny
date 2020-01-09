@@ -1,3 +1,12 @@
+0.003   2020-01-09  Released-By: PERLANCAR; Urgency: medium
+
+	- Rename dist from Bencher-Scenario{,s}-ModuleInstalledTiny. Rename
+          scenario ModuleInstalledTiny to
+          ModuleInstalledTiny::module_installed.
+
+	- Add scenario: ModuleInstalledTiny::module_source.
+
+
 0.002   2017-01-25  Released-By: PERLANCAR
 
 	- No functional changes.
