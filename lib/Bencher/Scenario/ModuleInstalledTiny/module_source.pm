@@ -42,7 +42,7 @@ our $scenario = {
         #    tags => ['cached'],
         #},
         {
-            name => 'require, cached',
+            name => 'require, uncached',
             code_template => 'BEGIN {<begin_code:raw>} delete $INC{<module_pm>}; require <module_pm>;',
             tags => ['uncached'],
         },
