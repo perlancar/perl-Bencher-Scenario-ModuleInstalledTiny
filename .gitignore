@@ -2,3 +2,4 @@ Bencher-Scenarios-ModuleInstalledTiny-*
 .build
 *~
 nytprof*
+.DS_Store
